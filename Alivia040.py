@@ -11,7 +11,7 @@ def invers_matriks_3x3(matriks):
     det = hitung_determinan_3x3(matriks)
     
     if det == 0:
-        raise ValueError("Matriks singular (Determinan = 0), tidak memiliki invers!")
+        raise ValueError("Matriks singular, tidak memiliki invers!")
 
     kofaktor = [
         [
