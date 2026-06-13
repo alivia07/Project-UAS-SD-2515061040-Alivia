@@ -1,0 +1,46 @@
+import Alivia040 as invu
+
+A = [
+    [3, 8, 9],
+    [-2, 0, 7],
+    [1, 5, 4]
+]
+
+# Menghitung invers
+print("=== INVERS MATRIKS ===")
+print("\nMatriks A Awal:")
+for baris in A:
+    print(baris)
+
+try:
+    hasil_invers = invu.invers_matriks_3x3(A)
+    
+    print("\nHasil Invers Matriks A:")
+    for baris in hasil_invers:
+        print(baris)
+
+except ValueError as e:
+    print(f"\nError: {e}")
+
+# Hitung determinan
+print("=== DETERMINAN ===")
+print("\nMatriks A:")
+for baris in A:
+    print(baris)
+
+nilai_determinan = invu.hitung_determinan_3x3(A)
+
+print("\n - Hasil Perhitungan -")
+print(f"Nilai Determinan dari Matriks A adalah: {nilai_determinan}")
+
+# mengitung Transpose
+print("=== TRANSPOSE ===")
+print("\nMatriks A Awal:")
+for baris in A:
+    print(baris)
+
+hasil_transpose = invu.transpose_matriks_3x3(A)
+
+print("\nHasil Setelah di-Transpose (Baris jadi Kolom):")
+for baris in hasil_transpose:
+    print(baris)
